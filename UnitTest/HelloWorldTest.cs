@@ -10,14 +10,14 @@ namespace Exercise.Controllers
         {
             IPrinter print = new PrintOnConsole();
             API controller = new API(print);
-            controller.PrintHelloWorld("print on console");
+            controller.PrintHelloWorld("Print on console");
         }
         [TestMethod]
         public void SaveIntoDB()
         {
             IPrinter print = new SaveIntoDatabase();
             API controller = new API(print);
-            controller.PrintHelloWorld("save into database");
+            controller.PrintHelloWorld("Save into database");
         }
     }
 }
